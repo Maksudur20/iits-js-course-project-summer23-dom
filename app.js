@@ -7,20 +7,21 @@
 // (classList) property to modify class
 // (getAttribute) and (setAttribute) to modify attributes
 
-// now modify the backgorund
+// now modify the backgorund in here
 
 const docsBackground = document.getElementById('iits-bg');
 docsBackground.classList.remove('bg-danger');
 docsBackground.classList.add('c-bg');
 
 
-//now modify the button
+//now modify the button in here
 
 const cvButton = document.getElementById('iits-btn');
 
 cvButton.classList.remove('btn-danger');
 cvButton.classList.add('c-button');
 
+//change the  every text color in here 
 const TextColor = document.getElementsByTagName('span');
 console.log(TextColor);
 for (let i = 1; i < TextColor.length; i++) {
@@ -56,22 +57,26 @@ document.getElementById('iits-goal').innerHTML = "Cyber security expert";
  
 /*now add to img */
 
-const imgURL = document.getElementById('iits-img');
-imgURL.setAttribute('src','img/img.jpg.jpg');
+const img = document.getElementById('iits-img');
+img.setAttribute('src','img/img.jpg.jpg');
+//img.style.height = '500px';
+//img.style.width = '800px';
 
-/*now add to my account*/
-const facebookURL = document.getElementById('iits-fb-link');
-facebookURL.setAttribute('href', 'https://www.facebook.com/Maksudur.Sium/');
+/*now add to my social media account*/
+const facebook = document.getElementById('iits-fb-link');
+facebook.setAttribute('href', 'https://www.facebook.com/Maksudur.Sium/');
 
-const gitURL = document.getElementById('iits-github-link');
-gitURL.setAttribute('href', 'https://github.com/Maksudur20/');
+const git = document.getElementById('iits-github-link');
+git.setAttribute('href', 'https://github.com/Maksudur20/');
 
 const mailto = document.getElementById('iits-email-link');
 mailto.setAttribute('href', 'mailto:20maksudur00@gmail.com');
 
 
-/*const instagramURL = document.getElementById('custom-Instagram-handler');
-facebookURL.setAttribute('href', 'https://www.instagram.com/its_sium/');*/
+const instagram = document.getElementById('iits-ig-link');
+instagram.setAttribute('href', 'https://www.instagram.com/its_sium/');
+
+
 // 1. Assign a id to the tags you want to select
 // 2. Use appropriate methods and properties to complete the specified task.
 // Example: 
